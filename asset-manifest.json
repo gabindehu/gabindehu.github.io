@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.98ec750f.css",
+    "main.js": "/static/js/main.01a26b82.js",
+    "static/css/487.3052f40c.chunk.css": "/static/css/487.3052f40c.chunk.css",
+    "static/js/487.624f29e6.chunk.js": "/static/js/487.624f29e6.chunk.js",
+    "static/css/990.5c830567.chunk.css": "/static/css/990.5c830567.chunk.css",
+    "static/js/990.5e276c4c.chunk.js": "/static/js/990.5e276c4c.chunk.js",
+    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/ubLogo.png": "/static/media/ubLogo.83270164d64619efacf7.png",
+    "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/resume.pdf": "/static/media/resume.3e5658c5e23da0ae1e7f.pdf",
+    "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/institutAgroDijonLogo.png": "/static/media/institutAgroDijonLogo.7afc50c273e029039b70.png",
+    "static/media/lyceeNotreDameLogo.png": "/static/media/lyceeNotreDameLogo.3c3a881b1eaf9300d938.png",
+    "static/media/developerActivity.svg": "/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "static/media/lyceeCarnotLogo.png": "/static/media/lyceeCarnotLogo.82d1d613c87c955cd7c4.png",
+    "index.html": "/index.html",
+    "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
+    "main.98ec750f.css.map": "/static/css/main.98ec750f.css.map",
+    "main.01a26b82.js.map": "/static/js/main.01a26b82.js.map",
+    "487.3052f40c.chunk.css.map": "/static/css/487.3052f40c.chunk.css.map",
+    "487.624f29e6.chunk.js.map": "/static/js/487.624f29e6.chunk.js.map",
+    "990.5c830567.chunk.css.map": "/static/css/990.5c830567.chunk.css.map",
+    "990.5e276c4c.chunk.js.map": "/static/js/990.5e276c4c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98ec750f.css",
+    "static/js/main.01a26b82.js"
+  ]
+}
