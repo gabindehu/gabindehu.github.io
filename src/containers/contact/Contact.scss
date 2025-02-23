@@ -1,0 +1,109 @@
+@import "../../_globalColor";
+
+.contact-div-main {
+  display: flex;
+  align-items: center; /* Aligne verticalement tous les éléments */
+}
+
+/* Donne plus d'espace au texte et moins à l'image */
+.contact-div-main > .contact-text-div {
+  flex: 2;
+}
+
+.contact-div-main > .contact-image-div {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Centre horizontalement l'image/lottie */
+  align-items: center;
+}
+
+.contact-image-div > * {
+  width: 30%; /* Définit la largeur de la Lottie en pourcentage de la taille du texte */
+  height: auto;
+}
+
+.dark-mode a {
+  color: $textColorDark;
+}
+
+.contact-div-main > * {
+  /* On peut laisser une base, mais les sélecteurs ci-dessus priment */
+  flex: 1;
+}
+
+.contact-title {
+  font-size: 65px;
+  font-weight: 400;
+}
+
+.contact-detail,
+.contact-detail-email {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 400;
+  color: $subTitle;
+  text-decoration: none;
+}
+
+.contact-detail:hover,
+.contact-detail-email:hover {
+  color: $textColor;
+  text-shadow: 2px 1px 2px $contactDetailHoverTS;
+  transition: all 0.3s;
+}
+
+.contact-subtitle {
+  text-transform: uppercase;
+}
+
+.contact-text-div {
+  margin-top: 1.5rem;
+}
+
+.contact-margin-top {
+  margin-top: 4rem;
+}
+
+/* Réduction de la taille de la Lottie via son conteneur */
+.contact-image-div > img {
+  width: 30%; /* La taille de l'image Lottie est 30% de la taille de la police du titre */
+  height: auto;
+  margin-left: 1.5rem;
+  margin-top: 0; /* Alignement vertical avec le texte */
+}
+
+/* Media Query */
+@media (max-width: 1380px), (max-width: 768px) {
+  .contact-title {
+    font-size: 56px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .contact-title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .contact-subtitle {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .contact-text-div {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .contact-detail,
+  .contact-detail-email {
+    font-size: 20px;
+  }
+
+  /* Masquer l'image sur mobile si nécessaire */
+  .contact-image-div {
+    /* Si tu souhaites l'afficher sur mobile, commentez la ligne suivante */
+    // display: none;
+  }
+}
