@@ -2,7 +2,7 @@
   "homepage": "https://gabindehu.github.io",
   "name": "CV",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "colorthief": "^2.3.0",
     "enzyme": "^3.11.0",
@@ -21,9 +21,9 @@
   },
   "scripts": {
     "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build",
     "start": "node fetch.js && react-scripts start",
     "build": "node fetch.js && react-scripts build",
-    "deploy": "gh-pages -b main -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
