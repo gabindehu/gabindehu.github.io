@@ -43,7 +43,9 @@ const skillsSection = {
     emoji(
       "⚡ Maîtrise des concepts fondamentaux d’un système d’exploitation, comme la gestion des processus ainsi que de la concurrence."
     ),
-    emoji("⚡ Création d'un portfolio en ligne sous forme de site statique en React, initialisé à partir d'un projet Node.js configurable.")
+    emoji(
+      "⚡ Création d'un portfolio en ligne sous forme de site statique en React, initialisé à partir d'un projet Node.js configurable."
+    )
   ],
   softwareSkills: [
     {skillName: "Python", fontAwesomeClassname: "fab fa-python"},
@@ -96,8 +98,7 @@ const techStack = {
     {
       Stack: "Node",
       progressPercentage: "15%"
-    },
-
+    }
   ],
   display: true // Assure-toi que cette section est activée
 };
@@ -215,7 +216,6 @@ const talkSection = {display: false};
 const resumeSection = {display: false};
 const podcastSection = {display: false};
 const twitterDetails = {display: false};
-//const techStack = { display: false };
 
 export {
   illustration,
