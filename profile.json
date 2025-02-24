@@ -1,1 +1,13 @@
-{"data":{"user":{"name":"Gabin Dehu","bio":"","avatarUrl":"https://avatars.githubusercontent.com/u/194498063?v=4","location":null,"pinnedItems":{"totalCount":0,"edges":[]}}}}
+{
+  "data": {
+    "user": {
+      "name": "Gabin Dehu",
+      "bio": "",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/194498063?v=4",
+      "location": "Dijon",
+      "pinnedItems": {
+        "edges": []
+      }
+    }
+  }
+}
