@@ -184,6 +184,18 @@ const bigProjects = {
           url: "https://github.com/gabindehu/Base-de-Donnee-Peage"
         }
       ]
+    },
+    {
+      image: "",
+      projectName: "Portfolio en ligne",
+      projectDesc:
+        "Portfolio en ligne sous forme de site statique en React, initialisé à partir d'un projet Node.js configurable.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/gabindehu/gabindehu.github.io"
+        }
+      ]
     }
   ],
   display: true
