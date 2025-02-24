@@ -41,21 +41,21 @@ export default function Greeting() {
               <div className="button-greeting-div">
                 <Button text="Me contacter" href="#contact" />
                 {greeting.resumeLink && (
-/*                  <a
+                  /*                  <a
                     href={require("./resume.pdf")} //Boutton CV permet d'installer le CV plutot que de le voir en ligne
                     download="CV_DEHU_Gabin.pdf"
                     className="download-link-button"
                   >
                     <Button text="Mon CV" />
                   </a>*/
-                    <a
-                        href={require("./resume.pdf")}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="download-link-button"
-                    >
-                      <Button text="Mon CV" />
-                    </a>
+                  <a
+                    href={require("./resume.pdf")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="download-link-button"
+                  >
+                    <Button text="Mon CV" />
+                  </a>
                 )}
               </div>
             </div>
