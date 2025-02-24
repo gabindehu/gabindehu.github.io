@@ -7,8 +7,10 @@ const GITHUB_USERNAME = process.env.GITHUB_USERNAME;
 const USE_GITHUB_DATA = process.env.USE_GITHUB_DATA;
 
 const ERR = {
-  noUserName: "Github Username is undefined. Please set the GITHUB_USERNAME variable in your .env file.",
-  requestFailed: "The request to GitHub failed. Check your GitHub token in the .env file."
+  noUserName:
+    "Github Username is undefined. Please set the GITHUB_USERNAME variable in your .env file.",
+  requestFailed:
+    "The request to GitHub failed. Check your GitHub token in the .env file."
 };
 
 // Vérification des variables d'environnement
@@ -76,14 +78,18 @@ if (USE_GITHUB_DATA === "true") {
 
     res.on("end", () => {
       try {
-        const jsonData = JSON.parse(data); // Vérifier que la réponse est bien un JSON valide
-        fs.writeFile("./public/profile.json", JSON.stringify(jsonData, null, 2), err => {
-          if (err) {
-            console.error("Error saving profile.json:", err);
-          } else {
-            console.log("Profile data saved to public/profile.json");
+        const jsonData = JSON.parse(data);
+        fs.writeFile(
+          "./public/profile.json",
+          JSON.stringify(jsonData, null, 2),
+          err => {
+            if (err) {
+              console.error("Error saving profile.json:", err);
+            } else {
+              console.log("Profile data saved to public/profile.json");
+            }
           }
-        });
+        );
       } catch (err) {
         console.error("Error parsing GitHub response:", err);
       }
