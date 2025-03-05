@@ -96,7 +96,7 @@ const techStack = {
       progressPercentage: "15%"
     },
     {
-      Stack: "Node",
+      Stack: "Node.js",
       progressPercentage: "15%"
     }
   ],
