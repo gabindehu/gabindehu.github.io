@@ -65,19 +65,19 @@ const techStack = {
   experience: [
     {
       Stack: "Python",
-      progressPercentage: "75%" // Pourcentage de compétence
+      progressPercentage: "50%" // Pourcentage de compétence
     },
     {
       Stack: "Java",
-      progressPercentage: "60%"
+      progressPercentage: "40%"
     },
     {
       Stack: "PostgreSQL",
-      progressPercentage: "50%"
+      progressPercentage: "35%"
     },
     {
       Stack: "C",
-      progressPercentage: "40%"
+      progressPercentage: "35%"
     },
     {
       Stack: "Three.js",
@@ -100,7 +100,7 @@ const techStack = {
       progressPercentage: "15%"
     }
   ],
-  display: true // Assure-toi que cette section est activée
+  display: true
 };
 
 const educationInfo = {
@@ -183,6 +183,18 @@ const bigProjects = {
         {
           name: "GitHub",
           url: "https://github.com/gabindehu/Base-de-Donnee-Peage"
+        }
+      ]
+    },
+    {
+      image: "",
+      projectName: "Base de Données Orientée Objet en Java",
+      projectDesc:
+        "Ce projet Java gère des objets comme une base de données, avec enregistrement en JSON via Jackson.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/gabindehu/ObjetDB"
         }
       ]
     },
