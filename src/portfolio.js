@@ -23,7 +23,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/gabindehu",
-  linkedin: "", // Ajoute ton lien LinkedIn si disponible
+  linkedin: "https://www.linkedin.com/in/gabin-dehu-385368361/", // Ajoute ton lien LinkedIn si disponible
   gmail: "gabdehu@gmail.com",
   display: true
 };
@@ -41,7 +41,7 @@ const skillsSection = {
     emoji("⚡ Algorithmique avancée en Python"),
     emoji("⚡ Gestion de la mémoire en language C"),
     emoji(
-      "⚡ Maîtrise des concepts fondamentaux d’un système d’exploitation, comme la gestion des processus ainsi que de la concurrence."
+      "⚡ Maîtrise des concepts fondamentaux d'un système d'exploitation, comme la gestion des processus ainsi que de la concurrence."
     ),
     emoji(
       "⚡ Création d'un portfolio en ligne sous forme de site statique en React, initialisé à partir d'un projet Node.js configurable."
@@ -109,7 +109,7 @@ const educationInfo = {
     {
       schoolName: "Université de Bourgogne",
       subHeader: "Licence 2 Maths/Informatique",
-      duration: "2023 - Aujourd’hui",
+      duration: "2023 - Aujourd'hui",
       desc: "Formation scientifique avec spécialisation en mathématiques et informatique.",
       logo: require("./assets/images/ubLogo.png")
     },
@@ -154,10 +154,10 @@ const bigProjects = {
   subtitle: "Projets développés dans le cadre universitaire et personnel",
   projects: [
     {
-      //image: require("./assets/images/chickdor.png"), // Ajoute une image de ton projet si possible
       projectName: "Simulation de Croquet en 3D",
       projectDesc:
-        "Simulation d’un lancer de balle en 3D avec Three.js, intégrant des courbes de Bézier pour modéliser les trajectoires.",
+        "Simulation d'un lancer de balle en 3D avec Three.js, intégrant des courbes de Bézier pour modéliser les trajectoires. Ce projet démontre ma capacité à combiner mathématiques et programmation pour créer des visualisations interactives.",
+      technologies: ["Three.js", "JavaScript", "Mathématiques"],
       footerLink: [
         {
           name: "GitHub",
@@ -166,19 +166,19 @@ const bigProjects = {
       ]
     },
     {
-      image: "",
       projectName: "Jeu de plateau",
       projectDesc:
-        "Jeu de stratégie sur grille avec gestion d’objets et d’obstacles, développé en Java.",
+        "Jeu de stratégie sur grille développé en Java avec une architecture orientée objet. Le projet inclut la gestion d'objets, d'obstacles et un système de règles complexes.",
+      technologies: ["Java", "Programmation Orientée Objet"],
       footerLink: [
         {name: "GitHub", url: "https://github.com/gabindehu/Jeu-de-plateau"}
       ]
     },
     {
-      image: "",
       projectName: "Base de Données Péage",
       projectDesc:
-        "Base de Données développée avec le SGBD PostgreSQL simulant la gestion de données liées aux péages d'autoroute.",
+        "Base de données PostgreSQL simulant la gestion de péages d'autoroute. Le projet inclut la modélisation des données, la création de requêtes complexes et l'optimisation des performances.",
+      technologies: ["PostgreSQL", "SQL", "Modélisation de données"],
       footerLink: [
         {
           name: "GitHub",
@@ -187,10 +187,10 @@ const bigProjects = {
       ]
     },
     {
-      image: "",
       projectName: "Base de Données Orientée Objet en Java",
       projectDesc:
-        "Ce projet Java gère des objets comme une base de données, avec enregistrement en JSON via Jackson.",
+        "Système de gestion d'objets en Java avec persistance des données en JSON via Jackson. Le projet démontre une compréhension approfondie de la sérialisation et de la gestion de données.",
+      technologies: ["Java", "JSON", "Jackson"],
       footerLink: [
         {
           name: "GitHub",
@@ -199,10 +199,10 @@ const bigProjects = {
       ]
     },
     {
-      image: "",
       projectName: "Portfolio en ligne",
       projectDesc:
-        "Portfolio en ligne sous forme de site statique en React, initialisé à partir d'un projet Node.js configurable.",
+        "Portfolio professionnel développé avec React, mettant en avant mes compétences en développement web et en design d'interface utilisateur.",
+      technologies: ["React", "JavaScript", "SCSS"],
       footerLink: [
         {
           name: "GitHub",
