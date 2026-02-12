@@ -86,7 +86,7 @@ const techStack = {
     },
     {
       Stack: "Lisp",
-      progressPercentage: "40%" // Nouvelle compétence
+      progressPercentage: "10%" // Nouvelle compétence
     },
     {
       Stack: "Three.js",
