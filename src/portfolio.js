@@ -13,9 +13,9 @@ const illustration = {
 
 const greeting = {
   username: "Gabin Dehu",
-  title: "Étudiant en L2 Maths/Informatique",
+  title: "Élève-Ingénieur en Génie Informatique",
   subTitle: emoji(
-    "Intéressé par les nouvelles technologies, j'étudie actuellement les Mathématiques et l'Informatique à l'Université de Bourgogne"
+    "Intéressé par les nouvelles technologies, j'étudie actuellement le Génie Informatique à l'Université de Technologie de Compiègne (UTC)."
   ),
   resumeLink: "/CV_DEHU_Gabin.pdf",
   displayGreeting: true
@@ -23,7 +23,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/gabindehu",
-  linkedin: "https://www.linkedin.com/in/gabin-dehu-385368361/", // Ajoute ton lien LinkedIn si disponible
+  linkedin: "https://www.linkedin.com/in/gabin-dehu-385368361/",
   gmail: "gabdehu@gmail.com",
   display: true
 };
@@ -31,27 +31,26 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "Ce que je fais",
   subTitle:
-    "Étudiant en L2 Maths/Informatique passionné par les nouvelles technologies et le développement d'interfaces innovantes.",
+    "Futur ingénieur passionné par le développement logiciel, l'administration système et les technologies innovantes.",
   skills: [
     emoji("⚡ Programmation orientée objet et développement de jeux en Java"),
+    emoji("⚡ Administration système, scripting et gestion d'environnements Linux"),
+    emoji("⚡ Gestion de bases de données relationnelles avancées avec SQL et PostgreSQL"),
+    emoji("⚡ Programmation fonctionnelle et IA symbolique en Lisp"),
+    emoji("⚡ Programmation système et gestion de la mémoire en langage C"),
     emoji(
       "⚡ Simulation et modélisation 3D en Three.js en utilisant des modèles mathématiques"
     ),
-    emoji("⚡ Gestion de bases de données avec PostgreSQL"),
-    emoji("⚡ Algorithmique avancée en Python"),
-    emoji("⚡ Gestion de la mémoire en language C"),
     emoji(
-      "⚡ Maîtrise des concepts fondamentaux d'un système d'exploitation, comme la gestion des processus ainsi que de la concurrence."
-    ),
-    emoji(
-      "⚡ Création d'un portfolio en ligne sous forme de site statique en React, initialisé à partir d'un projet Node.js configurable."
+      "⚡ Création de projets web modernes (React, Node.js)"
     )
   ],
   softwareSkills: [
-    {skillName: "Python", fontAwesomeClassname: "fab fa-python"},
-    {skillName: "Java", fontAwesomeClassname: "fab fa-java"},
     {skillName: "C", fontAwesomeClassname: "fas fa-code"},
-    {skillName: "PostgreSQL", fontAwesomeClassname: "fas fa-database"},
+    {skillName: "SQL/PostgreSQL", fontAwesomeClassname: "fas fa-database"},
+    {skillName: "SysAdmin", fontAwesomeClassname: "fas fa-terminal"},
+    {skillName: "Java", fontAwesomeClassname: "fab fa-java"},
+    {skillName: "Python", fontAwesomeClassname: "fab fa-python"},
     {skillName: "JavaScript", fontAwesomeClassname: "fab fa-js"},
     {skillName: "Three.js", fontAwesomeClassname: "fas fa-cube"},
     {skillName: "NodeJS", fontAwesomeClassname: "fab fa-node-js"},
@@ -61,23 +60,31 @@ const skillsSection = {
 };
 
 const techStack = {
-  viewSkillBars: true, // Pour afficher la section
+  viewSkillBars: true,
   experience: [
     {
-      Stack: "Python",
-      progressPercentage: "50%" // Pourcentage de compétence
+      Stack: "C",
+      progressPercentage: "60%" // Augmenté suite à votre pratique récente
+    },
+    {
+      Stack: "SQL (PostgreSQL)",
+      progressPercentage: "60%" // Augmenté
     },
     {
       Stack: "Java",
-      progressPercentage: "40%"
+      progressPercentage: "50%"
     },
     {
-      Stack: "PostgreSQL",
-      progressPercentage: "35%"
+      Stack: "Python",
+      progressPercentage: "50%"
     },
     {
-      Stack: "C",
-      progressPercentage: "35%"
+      Stack: "SysAdmin / Linux",
+      progressPercentage: "40%" // Nouvelle compétence
+    },
+    {
+      Stack: "Lisp",
+      progressPercentage: "40%" // Nouvelle compétence
     },
     {
       Stack: "Three.js",
@@ -89,15 +96,11 @@ const techStack = {
     },
     {
       Stack: "Git",
-      progressPercentage: "30%"
+      progressPercentage: "40%"
     },
     {
       Stack: "React",
-      progressPercentage: "15%"
-    },
-    {
-      Stack: "Node.js",
-      progressPercentage: "15%"
+      progressPercentage: "25%"
     }
   ],
   display: true
@@ -107,9 +110,16 @@ const educationInfo = {
   display: true,
   schools: [
     {
+      schoolName: "Université de Technologie de Compiègne (UTC)",
+      subHeader: "Diplôme d'ingénieur en Génie Informatique",
+      duration: "2024 - Aujourd'hui", // Ajustez l'année de début si nécessaire (ex: sept 2024)
+      desc: "Formation d'ingénieur généraliste en informatique (GI). Approfondissement en algorithmique, systèmes d'exploitation, bases de données et intelligence artificielle.",
+      logo: require("./assets/images/utcLogo.png") // Assurez-vous d'ajouter le logo de l'UTC dans vos assets ou gardez un logo générique
+    },
+    {
       schoolName: "Université de Bourgogne",
       subHeader: "Licence 2 Maths/Informatique",
-      duration: "2023 - Aujourd'hui",
+      duration: "2023 - 2024",
       desc: "Formation scientifique avec spécialisation en mathématiques et informatique.",
       logo: require("./assets/images/ubLogo.png")
     },
@@ -154,6 +164,18 @@ const bigProjects = {
   subtitle: "Projets développés dans le cadre universitaire et personnel",
   projects: [
     {
+      projectName: "Conseiller Sportif",
+      projectDesc:
+        "Application web couplant une interface (Python/Flask + Frontend) avec un Système Expert d'ordre 0+ développé en Common Lisp (SBCL).",
+      technologies: ["Lisp", "Python", "JavaScript"],
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/gabindehu/ConseillerSportif"
+        }
+      ]
+    },
+    {
       projectName: "Simulation de Croquet en 3D",
       projectDesc:
         "Simulation d'un lancer de balle en 3D avec Three.js, intégrant des courbes de Bézier pour modéliser les trajectoires. Ce projet démontre ma capacité à combiner mathématiques et programmation pour créer des visualisations interactives.",
@@ -169,7 +191,7 @@ const bigProjects = {
       projectName: "Jeu de plateau",
       projectDesc:
         "Jeu de stratégie sur grille développé en Java avec une architecture orientée objet. Le projet inclut la gestion d'objets, d'obstacles et un système de règles complexes.",
-      technologies: ["Java", "Programmation Orientée Objet"],
+      technologies: ["Java", "POO"],
       footerLink: [
         {name: "GitHub", url: "https://github.com/gabindehu/Jeu-de-plateau"}
       ]
@@ -178,7 +200,7 @@ const bigProjects = {
       projectName: "Base de Données Péage",
       projectDesc:
         "Base de données PostgreSQL simulant la gestion de péages d'autoroute. Le projet inclut la modélisation des données, la création de requêtes complexes et l'optimisation des performances.",
-      technologies: ["PostgreSQL", "SQL", "Modélisation de données"],
+      technologies: ["PostgreSQL", "SQL", "Modélisation"],
       footerLink: [
         {
           name: "GitHub",
@@ -189,7 +211,7 @@ const bigProjects = {
     {
       projectName: "Base de Données Orientée Objet en Java",
       projectDesc:
-        "Système de gestion d'objets en Java avec persistance des données en JSON via Jackson. Le projet démontre une compréhension approfondie de la sérialisation et de la gestion de données.",
+        "Système de gestion d'objets en Java avec persistance des données en JSON via Jackson. Le projet démontre une compréhension approfondie de la sérialisation.",
       technologies: ["Java", "JSON", "Jackson"],
       footerLink: [
         {
