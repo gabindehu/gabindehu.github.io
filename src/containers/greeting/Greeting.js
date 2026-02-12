@@ -49,7 +49,7 @@ export default function Greeting() {
                     <Button text="Mon CV" />
                   </a>*/
                   <a
-                    href={require("./resume.pdf")}
+                    href={require("./CV_DEHU_Gabin.pdf")}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="download-link-button"
