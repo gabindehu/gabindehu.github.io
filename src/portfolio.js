@@ -66,11 +66,11 @@ const techStack = {
   experience: [
     {
       Stack: "C",
-      progressPercentage: "60%" // Augmenté suite à votre pratique récente
+      progressPercentage: "60%"
     },
     {
       Stack: "SQL (PostgreSQL)",
-      progressPercentage: "60%" // Augmenté
+      progressPercentage: "60%"
     },
     {
       Stack: "Java",
@@ -82,11 +82,11 @@ const techStack = {
     },
     {
       Stack: "SysAdmin / Linux",
-      progressPercentage: "40%" // Nouvelle compétence
+      progressPercentage: "40%"
     },
     {
       Stack: "Lisp",
-      progressPercentage: "10%" // Nouvelle compétence
+      progressPercentage: "10%"
     },
     {
       Stack: "Three.js",
@@ -114,14 +114,14 @@ const educationInfo = {
     {
       schoolName: "Université de Technologie de Compiègne (UTC)",
       subHeader: "Diplôme d'ingénieur en Génie Informatique",
-      duration: "2024 - Aujourd'hui", // Ajustez l'année de début si nécessaire (ex: sept 2024)
+      duration: "2025 - Aujourd'hui",
       desc: "Formation d'ingénieur généraliste en informatique (GI). Approfondissement en algorithmique, systèmes d'exploitation, bases de données et intelligence artificielle.",
-      logo: require("./assets/images/utcLogo.png") // Assurez-vous d'ajouter le logo de l'UTC dans vos assets ou gardez un logo générique
+      logo: require("./assets/images/utcLogo.png")
     },
     {
       schoolName: "Université de Bourgogne",
       subHeader: "Licence 2 Maths/Informatique",
-      duration: "2023 - 2024",
+      duration: "2023 - 2025",
       desc: "Formation scientifique avec spécialisation en mathématiques et informatique.",
       logo: require("./assets/images/ubLogo.png")
     },
