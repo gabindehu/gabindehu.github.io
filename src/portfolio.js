@@ -33,19 +33,20 @@ const skillsSection = {
   subTitle:
     "Futur ingénieur passionné par le développement logiciel, l'administration système et les technologies innovantes.",
   skills: [
-    emoji("⚡ Programmation orientée objet et développement de jeux en Java"),
+    emoji("- Programmation orientée objet et développement de jeux en Java"),
     emoji(
-      "⚡ Administration système, scripting et gestion d'environnements Linux"
+      "- Administration système, scripting et gestion d'environnements Linux"
     ),
     emoji(
-      "⚡ Gestion de bases de données relationnelles avancées avec SQL et PostgreSQL"
+      "- Gestion de bases de données relationnelles avancées avec SQL et PostgreSQL"
     ),
-    emoji("⚡ Programmation fonctionnelle et IA symbolique en Lisp"),
-    emoji("⚡ Programmation système et gestion de la mémoire en langage C"),
+    emoji("- Programmation fonctionnelle et IA symbolique en Lisp"),
+    emoji("- Programmation système et gestion de la mémoire en langage C"),
     emoji(
-      "⚡ Simulation et modélisation 3D en Three.js en utilisant des modèles mathématiques"
+      "- Simulation et modélisation 3D en Three.js en utilisant des modèles mathématiques"
     ),
-    emoji("⚡ Création de projets web modernes (React, Node.js)")
+    emoji("- Création de projets web modernes (React, Node.js)"),
+    emoji("🌍 Langues : Français (Natif) | Anglais (C1 - Courant) | Espagnol (B1 - Intermédiaire)")
   ],
   softwareSkills: [
     {skillName: "C", fontAwesomeClassname: "fas fa-code"},
