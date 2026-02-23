@@ -46,7 +46,9 @@ const skillsSection = {
       "- Simulation et modélisation 3D en Three.js en utilisant des modèles mathématiques"
     ),
     emoji("- Création de projets web modernes (React, Node.js)"),
-    emoji("🌍 Langues : Français (Natif) | Anglais (C1 - Courant) | Espagnol (B1 - Intermédiaire)")
+    emoji(
+      "🌍 Langues : Français (Natif) | Anglais (C1 - Courant) | Espagnol (B1 - Intermédiaire)"
+    )
   ],
   softwareSkills: [
     {skillName: "C", fontAwesomeClassname: "fas fa-code"},
