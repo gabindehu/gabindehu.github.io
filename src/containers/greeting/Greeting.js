@@ -60,7 +60,6 @@ export default function Greeting() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </Fade>

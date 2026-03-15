@@ -14,8 +14,8 @@ const illustration = {
 const greeting = {
   username: "Gabin Dehu",
   title: "Étudiant en Génie Informatique",
-  subTitle: "Je suis à la recherche d'un stage de 6 mois en Développement Logiciel (Software Engineering) à partir de septembre/août 2026. Je suis intéressé par l'ingénierie des données, l'algorithmique et les architectures Backend."
-  ,
+  subTitle:
+    "Je suis à la recherche d'un stage de 6 mois en Développement Logiciel (Software Engineering) à partir de septembre/août 2026. Je suis intéressé par l'ingénierie des données, l'algorithmique et les architectures Backend.",
   resumeLink: "/CV_DEHU_Gabin.pdf",
   displayGreeting: true
 };
@@ -171,7 +171,7 @@ const bigProjects = {
         }
       ]
     },
-        {
+    {
       projectName: "Base de Données Orientée Objet en Java",
       projectDesc:
         "Système de gestion d'objets en Java avec persistance des données en JSON via Jackson. Le projet démontre une compréhension approfondie de la sérialisation.",

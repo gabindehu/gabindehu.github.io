@@ -11,8 +11,8 @@ Ce projet est un portfolio en ligne développé sous forme de site statique util
 - **GitHub Actions** : Utilisé pour automatiser le processus de build et de déploiement sur Github.
 
 ## Configuration avec IntelliJ IDEA
-Utilisation de l'IDE `IntelliJ IDEA`, `Node.js` et `npm` pour configurer, packager et tester le site en local.
 
+Utilisation de l'IDE `IntelliJ IDEA`, `Node.js` et `npm` pour configurer, packager et tester le site en local.
 
 ## Packaging et Déploiement
 
