@@ -13,10 +13,9 @@ const illustration = {
 
 const greeting = {
   username: "Gabin Dehu",
-  title: "Élève-Ingénieur en Génie Informatique",
-  subTitle: emoji(
-    "Intéressé par les nouvelles technologies, j'étudie actuellement le Génie Informatique à l'Université de Technologie de Compiègne (UTC)."
-  ),
+  title: "Étudiant en Génie Informatique",
+  subTitle: "Je suis à la recherche d'un stage de 6 mois en Développement Logiciel (Software Engineering) à partir de septembre/août 2026. Je suis intéressé par l'ingénierie des données, l'algorithmique et les architectures Backend."
+  ,
   resumeLink: "/CV_DEHU_Gabin.pdf",
   displayGreeting: true
 };
@@ -29,43 +28,36 @@ const socialMediaLinks = {
 };
 
 const skillsSection = {
-  title: "Ce que je fais",
+  title: "Mes compétences",
   subTitle:
-    "Futur ingénieur passionné par le développement logiciel, l'administration système et les technologies innovantes.",
+    "Intéressé par le développement logiciel (Backend), l'ingénierie des données et l'algorithmique. Je conçois des systèmes robustes, optimisés et évolutifs.",
   skills: [
-    emoji("- Programmation orientée objet et développement de jeux en Java"),
-    emoji(
-      "- Administration système, scripting et gestion d'environnements Linux"
-    ),
-    emoji(
-      "- Gestion de bases de données relationnelles avancées avec SQL et PostgreSQL"
-    ),
-    emoji("- Programmation fonctionnelle et IA symbolique en Lisp"),
-    emoji("- Programmation système et gestion de la mémoire en langage C"),
-    emoji(
-      "- Simulation et modélisation 3D en Three.js en utilisant des modèles mathématiques"
-    ),
-    emoji("- Création de projets web modernes (React, Node.js)"),
+    "- Programmation Orientée Objet (Java, C++) et architecture d'applications Client-Serveur",
+    "- Modélisation et gestion de bases de données relationnelles avancées (SQL, PostgreSQL)",
+    "- Développement Web et conception d'API REST (Python/Flask, Node.js, React)",
+    "- Programmation système, gestion de la mémoire (C/C++) et administration d'environnements Linux",
+    "- Algorithmique avancée, mathématiques appliquées et Intelligence Artificielle (Python, Lisp)",
+    "- Simulation et modélisation mathématique en environnement 3D (Three.js)",
     emoji(
       "🌍 Langues : Français (Natif) | Anglais (C1 - Courant) | Espagnol (B1 - Intermédiaire)"
     )
   ],
   softwareSkills: [
-    {skillName: "C", fontAwesomeClassname: "fas fa-code"},
-    {skillName: "SQL/PostgreSQL", fontAwesomeClassname: "fas fa-database"},
-    {skillName: "SysAdmin", fontAwesomeClassname: "fas fa-terminal"},
     {skillName: "Java", fontAwesomeClassname: "fab fa-java"},
     {skillName: "Python", fontAwesomeClassname: "fab fa-python"},
+    {skillName: "C/C++", fontAwesomeClassname: "fas fa-code"},
+    {skillName: "SQL/PostgreSQL", fontAwesomeClassname: "fas fa-database"},
+    {skillName: "Linux/SysAdmin", fontAwesomeClassname: "fas fa-terminal"},
+    {skillName: "Git", fontAwesomeClassname: "fab fa-git-alt"},
     {skillName: "JavaScript", fontAwesomeClassname: "fab fa-js"},
-    {skillName: "Three.js", fontAwesomeClassname: "fas fa-cube"},
     {skillName: "NodeJS", fontAwesomeClassname: "fab fa-node-js"},
-    {skillName: "Git", fontAwesomeClassname: "fab fa-git"}
+    {skillName: "React", fontAwesomeClassname: "fab fa-react"}
   ],
   display: true
 };
 
 const techStack = {
-  viewSkillBars: true,
+  viewSkillBars: false,
   experience: [
     {
       Stack: "C",
@@ -107,8 +99,7 @@ const techStack = {
       Stack: "React",
       progressPercentage: "25%"
     }
-  ],
-  display: true
+  ]
 };
 
 const educationInfo = {
@@ -118,7 +109,7 @@ const educationInfo = {
       schoolName: "Université de Technologie de Compiègne (UTC)",
       subHeader: "Diplôme d'ingénieur en Génie Informatique",
       duration: "2025 - Aujourd'hui",
-      desc: "Formation d'ingénieur généraliste en informatique (GI). Approfondissement en algorithmique, systèmes d'exploitation, bases de données et intelligence artificielle.",
+      desc: "Formation d'ingénieur généraliste en informatique. Approfondissement en statistiques, ingénierie des données, systèmes d'exploitation, bases de données et intelligence artificielle.",
       logo: require("./assets/images/utcLogo.png")
     },
     {
@@ -158,7 +149,7 @@ const workExperiences = {
       role: "Intérimaire",
       company: "Reine de Dijon",
       companylogo: require("./assets/images/reineDijonLogo.png"),
-      date: "Juin - Août 2024",
+      date: "Juin - Août 2024 / Juin - Août 2025",
       desc: "Assistance aux conducteurs de ligne dans le conditionnement de moutarde et la production de sauces."
     }
   ]
@@ -177,6 +168,30 @@ const bigProjects = {
         {
           name: "GitHub",
           url: "https://github.com/gabindehu/ConseillerSportif"
+        }
+      ]
+    },
+        {
+      projectName: "Base de Données Orientée Objet en Java",
+      projectDesc:
+        "Système de gestion d'objets en Java avec persistance des données en JSON via Jackson. Le projet démontre une compréhension approfondie de la sérialisation.",
+      technologies: ["Java", "JSON", "Jackson"],
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/gabindehu/ObjetDB"
+        }
+      ]
+    },
+    {
+      projectName: "Base de Données Péage",
+      projectDesc:
+        "Base de données PostgreSQL simulant la gestion de péages d'autoroute. Le projet inclut la modélisation des données, la création de requêtes complexes et l'optimisation des performances.",
+      technologies: ["PostgreSQL", "SQL", "Modélisation"],
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/gabindehu/Base-de-Donnee-Peage"
         }
       ]
     },
@@ -199,30 +214,6 @@ const bigProjects = {
       technologies: ["Java", "POO"],
       footerLink: [
         {name: "GitHub", url: "https://github.com/gabindehu/Jeu-de-plateau"}
-      ]
-    },
-    {
-      projectName: "Base de Données Péage",
-      projectDesc:
-        "Base de données PostgreSQL simulant la gestion de péages d'autoroute. Le projet inclut la modélisation des données, la création de requêtes complexes et l'optimisation des performances.",
-      technologies: ["PostgreSQL", "SQL", "Modélisation"],
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/gabindehu/Base-de-Donnee-Peage"
-        }
-      ]
-    },
-    {
-      projectName: "Base de Données Orientée Objet en Java",
-      projectDesc:
-        "Système de gestion d'objets en Java avec persistance des données en JSON via Jackson. Le projet démontre une compréhension approfondie de la sérialisation.",
-      technologies: ["Java", "JSON", "Jackson"],
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/gabindehu/ObjetDB"
-        }
       ]
     },
     {
