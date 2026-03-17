@@ -15,7 +15,7 @@ const greeting = {
   username: "Gabin Dehu",
   title: "Étudiant en Génie Informatique",
   subTitle:
-    "Je suis à la recherche d'un stage de 6 mois en Développement Logiciel (Software Engineering) à partir de septembre/août 2026. Je suis intéressé par l'ingénierie des données, l'algorithmique et les architectures Backend.",
+    "Je suis à la recherche d'un stage assistant ingénieur de 6 mois en Développement Logiciel (Software Engineering) à partir de septembre/août 2026. Je suis intéressé par l'ingénierie des données, l'algorithmique et les architectures Backend.",
   resumeLink: "/CV_DEHU_Gabin.pdf",
   displayGreeting: true
 };
