@@ -3,7 +3,6 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
-
 export default function StartupProject() {
   function openUrlInNewTab(url) {
     if (!url) {
@@ -13,15 +12,17 @@ export default function StartupProject() {
     win.focus();
   }
 
-  const {isDark} = useContext(StyleContext);
-  if (!bigProjects.display) {
+  const {isDark, isEnglish} = useContext(StyleContext);
+  const projectsData = isEnglish ? bigProjects.en : bigProjects.fr;
+
+  if (!projectsData.display) {
     return null;
   }
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects">
         <div>
-          <h1 className="skills-heading">{bigProjects.title}</h1>
+          <h1 className="skills-heading">{projectsData.title}</h1>
           <p
             className={
               isDark
@@ -29,11 +30,11 @@ export default function StartupProject() {
                 : "subTitle project-subtitle"
             }
           >
-            {bigProjects.subtitle}
+            {projectsData.subtitle}
           </p>
 
           <div className="projects-container">
-            {bigProjects.projects.map((project, i) => {
+            {projectsData.projects.map((project, i) => {
               return (
                 <div
                   key={i}

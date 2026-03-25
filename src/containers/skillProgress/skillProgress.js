@@ -1,16 +1,20 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./Progress.scss";
 import {techStack} from "../../portfolio";
 import {Fade} from "react-reveal";
+import StyleContext from "../../contexts/StyleContext";
 //import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function StackProgress() {
+  const {isEnglish} = useContext(StyleContext);
   if (techStack.viewSkillBars) {
     return (
       <Fade bottom duration={1000} distance="20px">
         <div className="skills-container">
           <div className="skills-bar">
-            <h1 className="skills-heading">Niveaux d'apprentissage</h1>
+            <h1 className="skills-heading">
+              {isEnglish ? "Learning Levels" : "Niveaux d'apprentissage"}
+            </h1>
             {techStack.experience.map((exp, i) => {
               const progressStyle = {
                 width: exp.progressPercentage

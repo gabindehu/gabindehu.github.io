@@ -8,8 +8,10 @@ import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Skills() {
-  const {isDark} = useContext(StyleContext);
-  if (!skillsSection.display) {
+  const {isDark, isEnglish} = useContext(StyleContext);
+  const skillsData = isEnglish ? skillsSection.en : skillsSection.fr;
+
+  if (!skillsData.display) {
     return null;
   }
   return (
@@ -32,7 +34,7 @@ export default function Skills() {
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
             >
-              {skillsSection.title}{" "}
+              {skillsData.title}{" "}
             </h1>
             <p
               className={
@@ -41,11 +43,11 @@ export default function Skills() {
                   : "subTitle skills-text-subtitle"
               }
             >
-              {skillsSection.subTitle}
+              {skillsData.subTitle}
             </p>
             <SoftwareSkill />
             <div>
-              {skillsSection.skills.map((skills, i) => {
+              {skillsData.skills.map((skills, i) => {
                 return (
                   <p
                     key={i}

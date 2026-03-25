@@ -2,16 +2,16 @@ import React, {useContext} from "react";
 import {Fade} from "react-reveal";
 //import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/CV";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
+import {greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
-  const {isDark} = useContext(StyleContext);
-  if (!greeting.displayGreeting) {
+  const {isDark, isEnglish} = useContext(StyleContext);
+  const greetingData = isEnglish ? greeting.en : greeting.fr;
+
+  if (!greetingData.displayGreeting) {
     return null;
   }
   return (
@@ -24,7 +24,7 @@ export default function Greeting() {
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
                 {" "}
-                {greeting.title}{" "}
+                {greetingData.title}{" "}
                 {/*<span className="wave-emoji">{emoji("👋")}</span>*/}
               </h1>
               <p
@@ -34,27 +34,23 @@ export default function Greeting() {
                     : "greeting-text-p subTitle"
                 }
               >
-                {greeting.subTitle}
+                {greetingData.subTitle}
               </p>
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="Me contacter" href="#contact" />
-                {greeting.resumeLink && (
-                  /*                  <a
-                    href={require("./resume.pdf")} //Boutton CV permet d'installer le CV plutot que de le voir en ligne
-                    download="CV_DEHU_Gabin.pdf"
-                    className="download-link-button"
-                  >
-                    <Button text="Mon CV" />
-                  </a>*/
+                <Button
+                  text={isEnglish ? "Contact Me" : "Me contacter"}
+                  href="#contact"
+                />
+                {greetingData.resumeLink && (
                   <a
-                    href={greeting.resumeLink}
+                    href={greetingData.resumeLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="download-link-button"
                   >
-                    <Button text="Mon CV" />
+                    <Button text={isEnglish ? "My Resume" : "Mon CV"} />
                   </a>
                 )}
               </div>

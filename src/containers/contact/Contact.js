@@ -6,15 +6,16 @@ import {Fade} from "react-reveal";
 //import email from "../../assets/lottie/email";
 //import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
-
 export default function Contact() {
-  const {isDark} = useContext(StyleContext);
+  const {isDark, isEnglish} = useContext(StyleContext);
+  const contactData = isEnglish ? contactInfo.en : contactInfo.fr;
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
-            <h1 className="heading contact-title">{contactInfo.title}</h1>
+            <h1 className="heading contact-title">{contactData.title}</h1>
             <p
               className={
                 isDark
@@ -22,20 +23,20 @@ export default function Contact() {
                   : "subTitle contact-subtitle"
               }
             >
-              {contactInfo.subtitle}
+              {contactData.subtitle}
             </p>
             <div
               className={
                 isDark ? "dark-mode contact-text-div" : "contact-text-div"
               }
             >
-              {contactInfo.number && (
+              {contactData.number && (
                 <>
                   <a
                     className="contact-detail"
-                    href={"tel:" + contactInfo.number}
+                    href={"tel:" + contactData.number}
                   >
-                    {contactInfo.number}
+                    {contactData.number}
                   </a>
                   <br />
                   <br />

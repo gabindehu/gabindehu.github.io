@@ -1,13 +1,17 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./SoftwareSkill.scss";
 import {skillsSection} from "../../portfolio";
+import StyleContext from "../../contexts/StyleContext";
 
 export default function SoftwareSkill() {
+  const {isEnglish} = useContext(StyleContext);
+  const skillsData = isEnglish ? skillsSection.en : skillsSection.fr;
+
   return (
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons">
-          {skillsSection.softwareSkills.map((skills, i) => {
+          {skillsData.softwareSkills.map((skills, i) => {
             return (
               <li
                 key={i}
