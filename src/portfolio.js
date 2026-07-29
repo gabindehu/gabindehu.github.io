@@ -16,7 +16,7 @@ const greeting = {
     username: "Gabin Dehu",
     title: "Étudiant en Génie Informatique",
     subTitle:
-      "Je suis à la recherche d'un stage assistant ingénieur de 6 mois en Développement Logiciel (Software Engineering) à partir de septembre/août 2026. Je suis intéressé par l'ingénierie des données, l'algorithmique et les architectures Backend.",
+      "Étudiant en Génie Informatique à l'Université de Technologie de Compiègne (UTC). Passionné par le développement logiciel, l'ingénierie des données, l'algorithmique et les architectures Backend.",
     resumeLink: "/CV_DEHU_Gabin.pdf",
     displayGreeting: true
   },
@@ -24,7 +24,7 @@ const greeting = {
     username: "Gabin Dehu",
     title: "Computer Engineering Student",
     subTitle:
-      "I am looking for a 6-month software engineering internship starting in August/September 2026. I am interested in data engineering, algorithms, and Backend architectures.",
+      "Computer Engineering student at the University of Technology of Compiègne (UTC). Passionate about software engineering, data engineering, algorithms, and Backend architectures.",
     resumeLink: "/CV_DEHU_Gabin_eng.pdf",
     displayGreeting: true
   }
